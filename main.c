@@ -6,6 +6,7 @@ struct multiboot;
 int main(struct multiboot *mboot_ptr)
 {
 	vga_clear();
+
 	vga_puts("­A problem has been detected and Windows has been shut down to prevent damage to your computer.\n\n");
 	vga_puts("The problem seems to be caused by the following file: Windows.cfg\n\n");
 	vga_puts("WINDOWS_IS_OBSOLETE_ERROR\n\nMicrosoft has abandoned the Windows project to create an opensource alternative on the linux kernel.\n\n");
