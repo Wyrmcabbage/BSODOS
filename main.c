@@ -1,5 +1,7 @@
 #include "vga.h"
+
 struct multiboot;
+
 int main(struct multiboot *mboot_ptr)
 {
 	vga_clear();
