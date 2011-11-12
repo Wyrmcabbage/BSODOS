@@ -19,5 +19,6 @@ int main(struct multiboot *mboot_ptr)
 	vga_puts("select \"Safe Mode\".\n\n");
 	vga_puts("Technical information:\n\n");
 	vga_puts("** STOP : 0xCAFEDEAD (0xCAFEBABE, 0xCAFED00D, 0xBADDECAF, 0xG0C0FFEE)");
-	return 0xDEADBABA;
+
+	return EXIT_SUCCESS;
 }
