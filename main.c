@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "vga.h"
 
 struct multiboot;
@@ -21,6 +22,8 @@ int main(struct multiboot *mboot_ptr)
 	vga_puts("select \"Safe Mode\".\n\n");
 	vga_puts("Technical information:\n\n");
 	vga_puts("** STOP : 0xCAFEDEAD (0xCAFEBABE, 0xCAFED00D, 0xBADDECAF, 0xG0C0FFEE)");
+
+	if (!strcmp(gets(), "exit")) exit(1); /* Haven't tested this, later change it to fetch input from vga */
 
 	return EXIT_SUCCESS;
 }
