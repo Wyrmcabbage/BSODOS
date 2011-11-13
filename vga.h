@@ -32,4 +32,7 @@ void vga_eputc(char _c, char _fgcolor, char _bgcolor);
 void vga_clear(void);
 void vga_puts(char *_str);
 void vga_eputs(char *_str, char _fgcolor, char _bgcolor);
+void vga_gets();
+void vga_exit();
+
 #endif
