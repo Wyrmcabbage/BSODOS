@@ -128,11 +128,11 @@ void vga_eputs(char *_str, char _fgcolor, char _bgcolor)
 
 void vga_gets() {
 	typedef struct TODO {
-		_Bool Todo;
-	} TODO;
+		_Bool todo;
+	} Todo;
 
-	TODO yes;
-	yes.Todo = 1;
+	Todo yes;
+	yes.todo = 1;
 }
 
 void vga_exit() {
