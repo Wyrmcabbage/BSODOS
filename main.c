@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+
 #include "vga.h"
 
 struct multiboot;
@@ -26,5 +28,5 @@ int main(struct multiboot *mboot_ptr)
 
 	if (!strcmp(vga_gets(), "exit")) vga_exit();
 
-	return EXIT_SUCCESS;
+	return 0;
 }
