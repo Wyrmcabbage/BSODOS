@@ -24,7 +24,7 @@ int main(struct multiboot *mboot_ptr)
 	vga_puts("Technical information:\n\n");
 	vga_puts("** STOP : 0xCAFEDEAD (0xCAFEBABE, 0xCAFED00D, 0xBADDECAF, 0xG0C0FFEE)");
 
-	if (!strcmp(gets(), "exit")) exit(1); /* Haven't tested this, later change it to fetch input from vga (vga_gets()) */
+	if (!strcmp(vga_gets(), "exit")) vga_exit();
 
 	return EXIT_SUCCESS;
 }
