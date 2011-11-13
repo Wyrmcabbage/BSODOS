@@ -125,3 +125,17 @@ void vga_eputs(char *_str, char _fgcolor, char _bgcolor)
 	do vga_eputc(_str[i++], _fgcolor, _bgcolor);
 	while(_str[i]);
 }
+
+void vga_gets() {
+	typedef struct TODO {
+		_Bool Todo;
+	} TODO;
+
+	TODO yes;
+	yes.Todo = 1;
+}
+
+void vga_exit() {
+	vga_clear();
+	exit(1);
+}
